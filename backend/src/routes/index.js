@@ -453,6 +453,9 @@ router.get('/api/health', (_, res) => res.json({ status: 'ok' }));
 router.get('/api/health', (_, res) => res.json({ status: 'ok' }));
 router.get('/api/v1/health', (_, res) => res.json({ status: 'ok', version: 'v1' }));
 
+router.use('/api/encounters', require('./encounters'));
+router.use('/api/v1/encounters', require('./encounters'));
+
 module.exports = router;
 
 // Non-versioned routes (used by frontend)
