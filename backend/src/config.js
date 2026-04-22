@@ -22,6 +22,7 @@ const config = {
   corsOrigin: process.env.CORS_ORIGIN || process.env.FRONTEND_ORIGIN || 'http://localhost:3000',
   databaseUrl: process.env.DATABASE_URL || null,
   redisUrl: process.env.REDIS_URL || null,
+  stellarServiceUrl: process.env.STELLAR_SERVICE_URL || null,
 };
 
 module.exports = config;
