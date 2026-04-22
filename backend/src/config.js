@@ -22,6 +22,7 @@ const config = {
   corsOrigin: process.env.CORS_ORIGIN || process.env.FRONTEND_ORIGIN || 'http://localhost:3000',
   databaseUrl: process.env.DATABASE_URL || null,
   redisUrl: process.env.REDIS_URL || null,
+  geminiApiKey: process.env.GEMINI_API_KEY || null,
 };
 
 module.exports = config;
